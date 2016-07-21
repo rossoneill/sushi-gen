@@ -1,0 +1,23 @@
+{
+  "name": "sushi-gen",
+  "version": "0.1.0",
+  "description": "A tool for automatically generating Sushi Cards from Markdown inputs.",
+  "main": "index.js",
+  "scripts": {
+    "fetch-content": "git clone https://github.com/PhilipHarney/sushi-content.git public/sushi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipHarney/sushi-gen.git"
+  },
+  "author": "Philip Harney <philip@coderdojo.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhilipHarney/sushi-gen/issues"
+  },
+  "homepage": "https://github.com/PhilipHarney/sushi-gen#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "harp": "^0.20.3"
+  }
+}

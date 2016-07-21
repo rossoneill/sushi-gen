@@ -1,0 +1,60 @@
+body{
+	a{
+		color: @subject-color;
+	}
+}
+
+.sushi-card-body{
+	ol{
+		>li{
+			img{
+				border-color: @subject-color;
+			}
+
+			blockquote{
+				background-color: @subject-color;
+				color: @text-color;
+				em{
+					color: @contrast-color;
+				}
+				a{
+					color: @contrast-color;
+				}
+			}
+
+			pre{
+				border-color: @subject-color;
+			}
+
+			em{
+				color: @subject-color;
+			}
+
+		}
+		>li::before{
+			color:@text-color;
+			background:@subject-color;
+		}
+	}
+}
+
+
+
+.sushi-series-title-bar{
+    color: @text-color;
+    background: @subject-color;
+}
+
+.sushi-card-title-bar{
+    .heading-info{
+		color: @subject-color;
+    }
+}
+
+.divider{
+    border-top-color: @subject-color;
+}
+
+.cd-bar{
+	border-bottom-color: darken(@subject-color, 15%);
+}

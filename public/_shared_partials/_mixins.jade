@@ -1,0 +1,16 @@
+//- Add the CoderDojo branding bar
+mixin bar
+	div(
+		class=[
+						"row",
+						"cd-bar"
+					]
+	)
+		div()
+
+//- Add the CoderDojo logo
+mixin cd_logo
+	img(
+		src="#{ assets.coderdojo_logo.path }",
+		alt="#{ assets.coderdojo_logo.description }"
+	)&attributes(attributes)

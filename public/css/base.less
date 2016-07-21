@@ -1,0 +1,26 @@
+@import 'colors_bar.less';
+@import './sushi_card/header.less';
+@import './sushi_card/body.less';
+
+body{
+	counter-reset: step-num-counter;
+}
+
+.row-eq-height {
+  display: flex;
+}
+
+.row-v-center{
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.page{
+    // Inherit the bootstrap container properties
+    .container;
+    page-break-before: always;
+}
+
+pre{
+    word-break: normal;
+}

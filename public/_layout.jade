@@ -1,0 +1,18 @@
+include ./_shared_partials/_html_head.jade
+body
+	//- Create a container for the page
+	div(
+		class=[
+				"page",
+				"master"
+				]
+	)
+	
+		include ./_shared_partials/_sushi_title.jade
+	include ./_shared_partials/_sushi_body.jade
+
+	// Include the JS that re-arranges the list created from md
+	script(src="/js/sushi.js")
+
+	// Activate the highlight.js code highlighing
+	script hljs.initHighlightingOnLoad();

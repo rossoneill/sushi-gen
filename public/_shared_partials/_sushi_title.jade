@@ -1,0 +1,95 @@
+include _mixins
+
+div(
+	class=[
+				"sushi-card-title"
+		]
+)
+	+bar
+	div(
+		class=[
+						"row",
+						"sushi-series-title-bar",
+						"row-eq-height",
+						"row-v-center"
+			]
+	)
+
+		//- Series title
+		div(
+			class=[
+							"col-xs-12",
+							"text-center"
+				]
+		)
+			//- TODO: Remove this in-line styling
+			h1(
+				class=[
+						"text-uppercase",
+						"series_title"	
+				]
+			) #{ series_title }
+	div(
+		class=[
+						"row",
+						"sushi-card-title-bar",
+						"row-eq-height",
+						"row-v-center"
+			]
+	)
+		div(
+			class=[
+						"col-xs-4",
+						"col-xs-offset-1"
+			]
+			) 
+				+cd_logo(
+						class=[
+								"coderdojo-logo"
+				]
+						)
+		
+		div(
+			class=[
+							"col-xs-6",
+							"heading-info",
+				]
+		)
+			h2(
+				class=[
+						"text-uppercase"
+				]
+				) #{ title }
+			h3 Card #{ card_number } of #{ series_total_cards }
+			h3 I'm Learning: 
+				span(
+					class=[
+							"text-capitalize"
+					]
+					) #{ language }
+		hr(
+			class=[
+					"divider",
+					"col-xs-10",
+					"col-xs-offset-1"
+			]
+			)
+	div(
+		class="row"
+	)
+		div(
+			class=[
+					"col-xs-10",
+					"col-xs-offset-1",
+					"text-right",
+					"footer-author"
+			]
+		)
+			p Produced by 
+				a(
+					href="#{ author.website }"
+				) #{ author.name } 
+				|// 
+				a(
+					href="https://twitter.com/"+author.twitter
+				) @#{ author.twitter }

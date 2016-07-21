@@ -1,0 +1,61 @@
+.sushi-card-body{
+	ol{
+		margin:0;
+		padding-right:0;
+		//counter-reset: step-num-counter;
+		>li{
+			position: relative;
+			margin: 15px 0 30px 2em;
+			list-style:none; /* Disable the normal item numbering */
+
+			img{
+				width: 100%;
+				padding: 4px;
+				margin: 30px 0;
+				border: 2px solid;
+			}
+
+			blockquote{
+				font: inherit;
+				border: none;
+				margin: 30px 0;
+				h3{
+					margin: 5px 0px;
+				}
+				em{
+					font-style: normal;
+					font-weight: bold;
+				}
+			}
+
+			pre{
+				margin: 30px 0;
+				white-space: pre-wrap;
+				border: 2px solid;
+				border-radius: 0px;
+				background: #fff;
+			}
+
+			em{
+				font-style: normal;
+				font-weight: bold;
+			}
+
+		}
+		>li::before{
+			content:counter(step-num-counter);
+			counter-increment:step-num-counter;
+			position:absolute;
+			left:-3em;
+			width:2em;
+			margin-right:8px;
+			padding:4px 3px 4px 4px;
+			font-weight:bold;
+			font-family: @cd-body-font, Arial, sans-serif;
+			text-align:center;
+		}
+		>li::last-of-type{
+			margin-bottom:0;
+		}
+	}
+}
