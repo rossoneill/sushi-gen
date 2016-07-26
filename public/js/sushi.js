@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var page_height = 1098;
+    var page_height = 1217;
 
     // Grab all list elements
     var list_elements = $("div.sushi-content > ol > li");
@@ -61,7 +61,7 @@ $(document).ready(function(){
 
         // Select the list
         var new_list  = $("#page-"+page_number+"-list");
-        // Reset the list counter TODO — I think... I forget exactly what's happening here
+        // Reset the list counter
         $(new_list).css("counter-reset","step-num-counter "+rendered_elements);
 
         // Add list elements
@@ -117,4 +117,11 @@ $(document).ready(function(){
         alert("Some of your list items are too long!");
     }
 
+});
+
+$(window).load(function(){
+    console.log("Starting highlights");
+    $('code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
 });

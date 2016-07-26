@@ -40,7 +40,13 @@ jspm_packages
 public/sushi/
 
 # Bower components
-public/components/
+public/_components/
+
+# Copied Bower components
+public/lib/
 
 # Mac cruft
 .DS_Store
+
+# Compiled Harp
+www/

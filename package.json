@@ -4,7 +4,8 @@
   "description": "A tool for automatically generating Sushi Cards from Markdown inputs.",
   "main": "index.js",
   "scripts": {
-    "fetch-content": "git clone https://github.com/PhilipHarney/sushi-content.git public/sushi"
+    "fetch-content": "git clone https://github.com/PhilipHarney/sushi-content.git ./public/sushi",
+    "setup-libraries": "node scripts/setup.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/PhilipHarney/sushi-gen#readme",
   "dependencies": {
-    "bower": "^1.7.9",
-    "harp": "^0.20.3"
+    "harp": "^0.20.3",
+    "ncp": "^2.0.0"
   }
 }
