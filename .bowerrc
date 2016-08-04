@@ -1,3 +1,6 @@
 {
-  "directory" : "public/_components"
+  "directory" : "public/_components",
+  "scripts": {
+      "postinstall": "sh ./.bower-postinstall.sh"
+  }
 }
