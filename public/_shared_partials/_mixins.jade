@@ -14,3 +14,14 @@ mixin cd_logo
 		src="#{ assets.coderdojo_logo.path }",
 		alt="#{ assets.coderdojo_logo.description }"
 	)&attributes(attributes)
+
+//- Get the correct language title
+mixin lang_name
+	if language == "php"
+		| PHP
+	else if language == "javascript"
+		| JavaScript
+	else if language == "html"
+		| HTML
+	else
+		| #{ language }
