@@ -50,3 +50,6 @@ public/lib/
 
 # Compiled Harp
 www/
+
+# Symlink for chopsticks
+public/_harp.json
